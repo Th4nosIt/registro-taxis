@@ -1,0 +1,999 @@
+
+/*.tab-title a{
+  background-color: #F4F4F4 !important;
+  border-radius: 5px 5px 0 0 ;
+  border-top: 2px  solid #ccc ;
+  border-left: 2px  solid #ccc ;
+  border-right: 2px  solid #ccc ;
+}
+.active a{
+  background-color: #0971B2!important;
+  border-radius: 5px 5px 0 0 ;
+  border-top: 2px  solid #0971B2 ;
+  border-left: 2px  solid #0971B2 ;
+  border-right: 2px  solid #0971B2 ;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+.tabs-content .content{
+  border: 2px  solid #CCC ;
+}
+
+
+
+
+.oculto{
+  display:none !important;
+}
+
+.a-la-izquierda{
+  text-align: left;
+}
+
+
+.desactivado{
+  color:lightgrey;
+}
+
+.desactivado:hover{
+  color:lightgrey;
+  cursor: default;
+}
+
+.masterhead{
+  background-color: #0971B2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px grey;
+    -moz-box-shadow: 0px 0px 15px grey;
+    -webkit-box-shadow: 0px 0px 15px grey;
+    -o-box-shadow: 0px 0px 15px grey;  
+  min-height:60px;
+  margin-top: -5px !important;
+  margin-bottom: 15px !important;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-info {
+  color: #d3d3d3;
+}
+.text-info:hover{
+    color: #d3d3d3 !important;
+  text-decoration: underline !important;
+}*/
+
+@charset "UTF-8";
+
+
+button{
+  width:100%;
+}
+.button{
+  padding: 0.77em 0.77em !important;
+}
+.botonMatricula{
+  width: 15%;
+  margin: 0 5px !important;
+}
+textarea, input[text] {
+    width: 100%;
+    /*max-width: 100%;*/
+    -moz-appearance: none;
+  border-radius: 0px;
+  background-color: #FFF;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #CCC;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1) inset;
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  /*font-family: inherit;*/
+  font-size: 0.77778rem;
+  margin: 0px 0px 0.88889rem;
+  padding: 0.44444rem;
+
+  /*width: 100%;*/
+  box-sizing: border-box;
+  transition: border-color 0.15s linear 0s, #000 0.15s linear 0s;
+
+}
+
+/* ELEMENTOS DE FORMULARIO */
+textarea{
+  height: 5.05556rem;
+}
+
+/* MIGUITAS DE PAN */
+#miguitasDePan .breadcrumbs{
+  margin: 0 1rem 1rem;
+}
+/*input, select{
+  height: 2.05556rem;
+}*/
+
+textarea:focus, input:focus {
+    background: none repeat scroll 0% 0% #FAFAFA;
+    border-color: #999;
+    outline: medium none;
+}
+
+#slt_anio{
+  width:50%;
+}
+#sltAnios,#sltCuotas{
+  width:20%;
+}
+
+
+/* FIN ELEMENTOS DE FORMULARIO */
+
+.oculto {
+  display: none;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.a-la-derecha{
+  text-align: right;
+}
+.a-la-izquierda{
+  text-align: left;
+}
+
+
+.row{
+  max-width: 76.5rem !important;
+}
+#mitabla,#mitablam,#mitablae,#mitablat, #mitablav, #mitablac, #mitablas, #mitablaa, #mitablasu, #mitablaex, #mitablaht{
+  border: 1px solid #111;
+  
+}
+
+#mitabla tr th,#mitablam tr th,#mitablae tr th,#mitablat tr th ,#mitablav tr th,#mitablac tr th,#mitablas tr th,#mitablaa tr th,#mitablasu tr th,#mitablaex tr th,#mitablaht tr th {
+  background-color: #585858;
+  color:white;
+}
+#mitabla tr.odd,#mitablam tr.odd,#mitablae tr.odd,#mitablat tr.odd,#mitablav tr.odd,#mitablac tr.odd,#mitablas tr.odd,#mitablaa tr.odd,#mitablasu tr.odd,#mitablaex tr.odd,#mitablaht tr.odd{
+    background-color: #ddd;
+}
+#mitabla tr.odd td.sorting_1,#mitablam tr.odd td.sorting_1,#mitablae tr.odd td.sorting_1,#mitablat tr.odd td.sorting_1,#mitablav tr.odd td.sorting_1,#mitablac tr.odd td.sorting_1,#mitablas tr.odd td.sorting_1,#mitablaa tr.odd td.sorting_1,#mitablasu tr.odd td.sorting_1,#mitablaex tr.odd td.sorting_1,#mitablaht tr.odd td.sorting_1{
+    background-color: rgba(33,153,232,0.21);
+}
+#mitabla tr.even td.sorting_1,#mitablam tr.even td.sorting_1,#mitablae tr.even td.sorting_1,#mitablat tr.even td.sorting_1,#mitablav tr.even td.sorting_1,#mitablac tr.even td.sorting_1,#mitablas tr.even td.sorting_1,#mitablaa tr.even td.sorting_1,#mitablasu tr.even td.sorting_1,#mitablaex tr.even td.sorting_1 ,#mitablaht tr.even td.sorting_1 {
+    background-color: rgba(33,153,232,0.18);
+}
+
+
+#tablaLicencias .previous, #tablaLicencias .next { font-weight: bold;}
+#tablaLicencias .paginate_button:hover { background:rgba(33,153,232,0.66) !important}
+#tablaLicencias .paginate_button { color:#2199e8 !important;background:rgba(33,153,232,0.21) !important;border:1px solid #cacaca!important;}
+#tablaLicencias .current { color:#fff !important;background:rgba(33,153,232,1) !important;}
+
+#contenedorTablas .previous, #contenedorTablas .next { font-weight: bold;}
+#contenedorTablas .paginate_button:hover { background:rgba(33,153,232,0.66) !important}
+#contenedorTablas .paginate_button { color:#2199e8 !important;background:rgba(33,153,232,0.21) !important;border:1px solid #cacaca!important;}
+#contenedorTablas .current { color:#fff !important;background:rgba(33,153,232,1) !important;}
+
+
+#mitabla tr td,#mitablam tr td,#mitablae tr td,#mitablat tr td,#mitablav tr td,#mitablac tr td,#mitablas tr td,#mitablaa tr td,#mitablasu tr td,#mitablaex tr td,#mitablaht tr td{
+  font-size: 0.9em;
+}
+
+#tablaPagos,#tablaBajasParciales{
+  /*padding:1px;*/
+  border: 2px solid #DDD;
+}
+
+#tablaPagos th,#tablaBajasParciales th{
+  padding:1px;
+  border: 1px solid #fff;
+  margin:1px;
+}
+#tablaPagos input,#tablaPagos select, #tablaBajasParciales input, #tablaBajasParciales select{
+  margin:0;
+}
+
+.link{
+  font-style: italic;
+  cursor: pointer;
+}
+
+#contenedorTabla{
+  padding-top: 20px;
+}
+
+.error{
+  color:red;
+  font-size: 0.7em;
+}
+
+#loading{
+  padding-top:25px;
+}
+
+.negrita{
+  font-weight: bold;
+}
+
+.subrayado{
+  text-decoration: underline;
+}
+
+.subrayado i{
+  padding-right:10px;
+}
+
+#imagenCabecera{
+  padding: 15px;
+}
+
+#msg{
+  display:none;
+  width: 100%;
+}
+
+h1{
+  text-transform: capitalize;
+}
+
+/*i.size-21,i.size-18,i.size-24,i.size-36{
+  cursor: pointer;
+  color:#bbb;
+}
+i.size-21:hover,i.size-18:hover,i.size-24:hover,i.size-36:hover{
+  color:#333;
+}
+*/
+.size-9 { font-size: 9px; }
+.size-10 { font-size: 10px; }
+
+.size-12 { font-size: 12px; }
+      
+.size-14 { font-size: 14px; }
+
+.size-16 { font-size: 16px; }
+
+.size-18 { font-size: 18px; }
+.size-19 { font-size: 19px; }
+
+.size-21 { font-size: 21px; }
+
+.size-24 { font-size: 24px; }
+
+.size-36 { font-size: 36px; }
+
+.size-48 { font-size: 48px; }
+
+.size-60 { font-size: 60px; }
+
+.size-72 { font-size: 72px; }
+
+#tituloRegistro h3{
+    visibility: hidden;
+}
+
+.desactivado{
+  color:lightgrey;
+}
+
+.desactivado:hover{
+  color:lightgrey;
+  cursor: default;
+}
+
+.masterhead{
+  background-color: #0971B2;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px grey;
+    -moz-box-shadow: 0px 0px 15px grey;
+    -webkit-box-shadow: 0px 0px 15px grey;
+    -o-box-shadow: 0px 0px 15px grey;  
+  min-height:60px;
+  margin-top: -3px !important;
+  margin-bottom: 15px !important;
+}
+.text-white {
+  color: #ffffff;
+}
+.text-info {
+  color: #d3d3d3;
+}
+.text-info:hover{
+    color: #d3d3d3 !important;
+  text-decoration: underline !important;
+}
+
+
+.customButton {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  /*display:inline;*/
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-size:11px;
+  font-weight:bold;
+  padding:6px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.customButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color:#f6f6f6;
+}
+.customButton:active {
+  position:relative;
+  top:1px;
+}
+
+.customButtonEdit {
+  /*-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;*/
+ /* background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;*/
+  /*-moz-border-radius:6px;
+  -webkit-border-radius:6px;*/
+  /*border:1px solid #dcdcdc;*/
+  /*display:inline;*/
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  /*font-size:11px;*/
+  font-weight:bold;
+  padding:1px 6px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+
+.customButtonEditInactivo, .customButtonEditInactivo:hover {
+  cursor:default;
+  color:#ddd;
+  padding:1px 6px;
+}
+
+/*.customButtonEdit:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f6f6f6), color-stop(1, #ffffff));
+  background:-moz-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-o-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:-ms-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0);
+  background-color:#f6f6f6;
+}*/
+.customButtonEdit:active {
+  position:relative;
+  top:1px;
+}
+
+#camposBaja,#filaRepresentante,.representante, .representante>legend{
+  background-color:#a0d3e8;
+}
+
+.customButtonInactivo {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  /*display:inline;*/
+  cursor:default;
+  color:#ddd;
+  font-family:Arial;
+  font-size:11px;
+  font-weight:bold;
+  padding:6px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.customButtonInactivo:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffffff), color-stop(1, #f6f6f6));
+  background:-moz-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-webkit-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-o-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:-ms-linear-gradient(top, #ffffff 5%, #f6f6f6 100%);
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f6f6f6',GradientType=0);
+  background-color:#ffffff;
+  cursor:default;
+  color:#ddd;
+}
+#txtNuevoTramite, #sltTramite,#txtFileDescripcion,#txtFile{
+  margin-bottom: 0rem !important;
+}
+.rojo{
+  color:red;
+}
+.verde{
+  color:green;
+}
+#infoEstado{
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  font-weight: normal !important;
+  font-style: italic;
+}
+.fichaInactiva:hover{
+  cursor: default;
+}
+
+.fichaNueva{
+  background-color:#f80;
+}
+.fichaNueva:hover{
+  background-color:#f50;
+}
+
+#tablaTelefonos, #tablaObservaciones,.tablaMatriculas,#tablaRecogidaDatos,#tablaListaPagos{
+  width:100%;
+}
+#tablaNuevoUsuario{
+  width:100%;
+}
+
+#tablaPadres tfoot td,#tablaPadres tbody td{
+  padding-top:0;
+  padding-bottom:0;
+}
+#tablaPadres input, #tablaPadres select{
+  margin-top:0;
+  margin-bottom:0;
+  /*padding-top:0;
+  padding-bottom:0;
+  padding-left:1px;*/
+  padding:0px;
+  height:1.5rem;
+  background-position: 130% center;
+}
+#resumen .row{
+  margin-top:-50px !important;
+}
+
+#contenedorAltaAlumno input[text]{
+  text-transform:uppercase;
+}
+
+.inactivo{
+  background-color: #DDDDDD;
+  cursor: default;
+}
+.tipoEnlace{
+  color:#0971B2 !important;
+}
+
+.tipoEnlace:hover{
+  color:#FF5700 !important;
+  cursor:pointer;
+}
+
+/*#contenedorVerAlumno article{
+  margin-bottom: 3px;
+}*/
+#tablaAlumno{
+  margin-top:30px;
+}
+.cajita{
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.panelIzq{
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  background-color:#ddd;
+
+}
+.panelDer{
+  /*border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  /*border-left: 1px solid #ccc*/
+  /*background-color:#ddd;*/
+  border-top: 3px solid #ccc;
+  border-right: 3px solid #ccc;
+  border-bottom: 3px solid #ccc;
+  border-left: 3px solid #ccc;
+  background-color:#ddd;
+
+}
+
+#tablaAlumno,#tablaNuevoAlumno,#tablaActualizaAlumno,#tablaNuevoExpediente,#tablaCabeceraAlumno,#tablaListaMatriculas{
+  width:100%;
+}
+#tablaAlumno>tbody>tr:first-child span{ /*, .callout span{*/
+  display:block;
+  margin:5px;
+}
+#tablaAlumno td{
+  padding-left: 20px;
+  vertical-align: baseline;
+}
+
+#mayoriaEdad{
+  margin: 0 !important;
+}
+#tablaAlumno #tablaPadres td{
+  vertical-align: inherit;
+}
+.item{
+  font-size: 11px;
+  display:block;
+}
+.destacado{
+  background-color:lavender;
+}
+
+.radius{
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  border-radius:6px;
+}
+.large-offset-1{
+  margin-left:2.33333%;
+}
+.large-9-custom{
+  /*width:81%;*/
+  width:78%;
+
+}
+.button{
+  margin: 0 0 1rem 0;
+}
+button.button{
+  margin: 0 0 0rem 0;
+}
+
+.animar{
+  -webkit-animation: blink 1s infinite ;
+  -moz-animation: blink 1s infinite;
+  -ms-animation:blink 1s infinite;
+  border:2px solid;
+}
+
+@-webkit-keyframes blink {
+        0%   { border-style:groove; }
+        /*25%  { border-style:dotted; }*/
+        50%  { border-style:solid; }
+        /*75%  { border-style:dotted; }*/
+        100% { border-style:groove; }
+}
+@-moz-keyframes blink {
+        0%   { border-style:groove; }
+        /*25%  { border-style:dotted; }*/
+        50%  { border-style:solid; }
+        /*75%  { border-style:dotted; }*/
+        100% { border-style:groove; }
+}
+@-ms-keyframes blink {
+        0%   { border-style:groove; }
+        /*25%  { border-style:dotted; }*/
+        50%  { border-style:solid; }
+        /*75%  { border-style:dotted; }*/
+        100% { border-style:groove; }
+}
+
+#inpNumIdentifica,#inpNIFNIEC,#inpNIFNIET,#inpNIFNIER,#inpMatriculaCambio,#inpMatricula,#inpMatriculaEdit,#inpNumIdentificaAct{
+  margin:0;
+}
+
+.txtInfoTabula{
+  font-size: 11px;
+  color: #ec5840;
+}
+/*@-webkit-keyframes blink {
+        0%   { border-color:red; }
+        50%  { border-color:green;}
+        100% { border-color:red; }
+}
+@-moz-keyframes blink {
+        0%   { border-color:red; }
+        50%  { border-color:green;}
+        100% { border-color:red; }
+}
+@-ms-keyframes blink {
+        0%   { border-color:red; }
+        50%  { border-color:green;}
+        100% { border-color:red; }
+}*/
+#tablaListaMatriculas{
+  background: #fff !important;
+  margin-bottom: 1.25rem !important;
+  border: solid 2px #ddd !important;
+  table-layout: auto !important;
+  }
+
+.subtituloMatricula{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+}
+.granTitulo{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+.cajaBusquedaAlumnoMatricula,.cajaBusquedaAlumnoMatricula:focus{
+  background: aliceblue;
+}
+
+
+/* 
+Subtitulo en tabla de matricula
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+
+
+titulo Curso en matricula
+text-align: center;
+    text-transform: uppercase;
+    font-size: 40;
+    font-weight: bold;
+
+Caja busqueda alumno en matricula
+    background: aliceblue;
+
+    <div class='large-2 columns imgbaja'><br/><br/><br/></div>
+*/
+#panelAcciones hr
+{
+  margin: 0px;
+}
+.imgbaja{
+  background-image: url("/obras/img/baja.png") !important;
+  background-repeat: no-repeat;
+}
+
+#subcontenInfoUser{
+  display: none;
+}
+
+/* Sobreescribir CSS foundation original */
+.menu > li:not(.menu-text) > a {
+    display: block;
+    padding: 0.3rem 1rem;
+    line-height: 1;
+}
+
+label{
+  display:inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+select, #inp_dni, #inp_numexp, #inp_nombre, #inp_apellidos, #inp_direccion, #inp_lugarNac, #inp_fechaNac, #inp_telefono, #inp_movil, #inp_email, #inp_observa{
+  font-family: courier !important;
+}
+
+#tablaNuevoUsuario input,  #tablaNuevoUsuario textarea{/*, #tablaNuevoUsuario input[password], #tablaNuevoUsuario input[date], #tablaNuevoUsuario input[datetime], #tablaNuevoUsuario input[datetime-local], #tablaNuevoUsuario input[month], #tablaNuevoUsuario input[week], #tablaNuevoUsuario input[email], #tablaNuevoUsuario input[number], #tablaNuevoUsuario input[search], #tablaNuevoUsuario input[tel], #tablaNuevoUsuario input[time], #tablaNuevoUsuario input[url], #tablaNuevoUsuario input[color], #tablaNuevoUsuario textarea {*/
+  margin-bottom:0 !important;
+}
+
+.mayusculas{
+  text-transform: uppercase;  
+}
+.minusculas{
+  text-transform: lowercase;  
+}
+
+button{
+  width:auto;
+}
+
+#mitablaUsuarios th,#mitablaUsuarios {
+  border-bottom: none !important;
+
+}
+
+#mitablaUsuarios thead, #mitablaUsuarios tfoot {
+    background: #585858 !important;
+    color: rgba(255,255,255,0.9) !important;
+}
+
+#mitablaUsuarios tr.odd {
+    background-color: #e6e6e6 !important;
+}
+
+#mitablaUsuarios tbody tr:nth-child(even) {
+    background-color: #f1f1f1 !important;
+}
+
+#resultadoBusqueda img {
+  vertical-align: text-top;
+}
+
+.cargando{
+  padding: 15% 0;
+}
+
+/*****************************************/
+.espacioAnterior{
+  padding-top:15px;
+}
+.resumen{
+  color: #0971b2;
+  font-family: tahoma;
+  font-weight: 600;
+}
+
+#contenedorAccionesLicencia fieldset,#cajaTaximetro fieldset,#contenedorAccionesGestion fieldset ,#contenedorAccionesVehiculo fieldset{
+  border: 1px solid #999;
+  padding: 5px;
+}
+#contenedorAccionesLicencia fieldset>legend,#contenedorAccionesGestion fieldset>legend, #contenedorAccionesVehiculo fieldset>legend{
+  color:#000;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align:center;
+  box-shadow: 0px 0px 5px #333;
+  font-size: 2em;
+  background-color: rgba(238, 238, 238, 0.58);
+  border-radius: 5px 5px 0px 0px;
+
+}
+
+/*#contenedorAccionesGestion fieldset ,#contenedorAccionesVehiculo fieldset{
+  border: 1px solid #ddd;
+  padding: 5px;
+  color:#000;
+}*/
+/*#contenedorAccionesGestion fieldset>legend, #contenedorAccionesVehiculo fieldset>legend{
+  color:#ddd;
+  padding: 10px;
+}*/
+
+#fieldsetTitutar fieldset>legend ,#cajaTaximetro fieldset>legend, #fieldsetMarcaModelo fieldset>legend{
+  /*color:#000 !important;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;*/
+  color: #000 !important;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+#fieldsetTitutar fieldset, #fieldsetMarcaModelo fieldset{
+  /*background-color: #ddd;*/
+  background-color: rgba(238, 238, 238, 0.58);
+  border-radius: 5px;
+}
+
+/*#contenedorAccionesLicencia input{
+  border-radius: 15px;
+}*/
+
+#inpNIFNIET, #inpNIFNIEC, #inpNIFNIER, #inpMatricula, #inpMatriculaCambio,#inpNumBastidor,#inpNumIdentifica,#inpNumIdentificaAct{
+  text-transform: uppercase;
+}
+#contenedorAccionesLicencia #tieneRepresentante, #contenedorAccionesLicencia #esConductor, #contenedorAccionesGestion #tieneRepresentante{
+  width:25%;
+  margin-top:1%;
+  /*text-align: center;*/
+}
+#contenedorAccionesLicencia .row, #contenedorAccionesVehiculo .row, #contenedorAccionesGestion .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+#contenedorAccionesLicencia .button,#contenedorAccionesGestion .button ,#contenedorAccionesVehiculo .button{
+    margin: 5px 0 1rem 0;
+    text-align: left;
+}
+.elementoInactivo{
+  color:#eee;
+}
+.elementoInactivoFondo{
+  /*color:#eee;*/
+  background-color: rgba(33,153,232,0.25) !important;
+  /*background-color:#ddd;*/
+  border: 1px solid #cacaca;
+}
+
+#contenedorAccionesLicencia input[readonly], #contenedorAccionesLicencia textarea[readonly]{
+  background-color: rgba(33,153,232,0.25) !important;
+  /*background-color: red !important;*/
+}
+
+#elementosAdicionales{
+  text-align: center;
+}
+#elementosAdicionales label{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#elementosAdicionales input[type='checkbox']{
+  text-align: center;
+  margin-right: 0; 
+}
+
+#ui-datepicker-title select{
+  color:#000 !important;
+}
+#cajaBarraProgreso{
+  border: 1px solid #ddd;
+  background: aliceblue;
+  margin-bottom: 20px;
+  padding-top:5px;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('fonts/fontawesome-webfont.eot?v=4.6.2');
+  src: url('fonts/fontawesome-webfont.eot?#iefix&v=4.6.2') format('embedded-opentype'), url('fonts/fontawesome-webfont.woff2?v=4.6.2') format('woff2'), url('fonts/fontawesome-webfont.woff?v=4.6.2') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.6.2') format('truetype'), url('fonts/fontawesome-webfont.svg?v=4.6.2#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+.fa-expeditedssl:before {
+  content: "\f23e";
+}
+
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+.transparente{
+  filter:alpha(opacity=50);
+  opacity:0.5;
+}
+
+#barraDeEstado{
+  font-size: 10px;
+  background-color: aquamarine;
+}
+
+#registroErrores{
+  border: solid 1px red !important;
+  color: rgba(255,0,0,0.5) !important;
+}
+
+#registroErrores>legend{
+  color:red !important;
+}
+
+.conErrores{
+  border: solid 1px red !important;
+  color: rgba(255,0,0,0.5) !important; 
+}
+.conErrores>legend{
+  color:red !important;  
+}
+
+.sinErrores{
+  margin-top:5%;
+  border: solid 1px green !important;
+  color: rgba(101,208,116,0.9) !important; 
+  padding:25px;
+}
+.sinErrores>legend{
+  color:green !important;  
+}
+
+.boton{
+  background-color: #1599E8;
+  color: white;
+  padding: 5px;
+  font-family: verdana;
+  font-size: small;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+/****************************/
+/* ELEMENTOS PADRE DEL MENU */
+/****************************/
+#mnPortada:hover,#mnLicencia:hover,#mnVehiculo:hover,#mnGestion:hover {
+  cursor:pointer;
+  text-decoration: underline;
+}
+#cajonMenu i {
+  padding-right:15px;
+}
+
+.datosResumen{
+  font-size:11px;
+}
+
+.fichaResumen{
+  /*border: 1px solid black;*/
+  margin: 5px;
+}
+
+.fichaResumen > .fich{
+  border: 1px solid black;
+  padding: 5px;
+  margin: -1px;
+}
+
+.fich{
+  background-color: #fff;
+}
+
+.reveal
+{
+  border: 5px solid #ec5840;
+  background-color: #eee;
+}
+
+#cajaRepresentante, #cajaConductor{
+  margin-bottom: 15px;
+}
+
+.nota{
+  padding: 0 5px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
+/*
+a tener en cuenta para los fieldsets
+el div contenedor
+    margin-top: 20px;
+
+fieldset
+    background-color: aliceblue;
+
+legend
+
+  background-color: aliceblue;
+    border-radius: 5px;
+    padding-top: 0;
+    border: 1px solid;
+    padding-bottom: 0;
+    box-shadow: 1px 1px 7px #888888;
